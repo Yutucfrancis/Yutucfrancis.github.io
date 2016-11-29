@@ -1709,10 +1709,10 @@ div.pp_default .pp_close{
 ************************************************************************/
 /*********************** Portfolio Item Section *************************/
 .folioItemArea{
-    background: rgba(0, 0, 0, 0) url("bg.png") repeat scroll center center;
+    background: rgba(0, 0, 0, 0) url("colorful.jpg") repeat scroll center center;
 }
 .folioItemArea:after {
-    background: rgba(0, 0, 0, 0) url("bg.png") no-repeat scroll center center;
+    background: rgba(0, 0, 0, 0) url("colorful.jpg") no-repeat scroll center center;
     bottom: -40px;
     content: "";
     height: 40px;
