@@ -1568,11 +1568,11 @@ div.pp_default .pp_close{
 /************************ Breadcrumb Section *******************************/
 .breadCrumArea{
     position: relative;
-    background: url(twitter.png) no-repeat scroll center center / cover;
+    background: #55575c url(bg.jpg);
     padding: 175px 0 60px;
 }
 .breadCrumArea:after {
-    background: rgba(0, 0, 0, 0) url("twitter.png") no-repeat scroll center center;
+    background: #55575c url(bg.jpg);
     bottom: -40px;
     content: "";
     height: 40px;
