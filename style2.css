@@ -2608,7 +2608,15 @@ outline: 0;
 }
 
 body {
-    background: url(lines.jpg) no-repeat scroll center center;
+    	color: #e9e2ee;
+	font-size: 14px;
+	font-family: sans-serif;
+	line-height: 20px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+	background: #55575c url(lines.jpg);
+	-webkit-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+	   -moz-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+			box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
 }
 a,
 a:link,
