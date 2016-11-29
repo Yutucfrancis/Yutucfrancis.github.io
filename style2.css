@@ -3423,7 +3423,7 @@ outline: 0;
 }
 
 body {
-    background-color: lightblue;
+    background: url(lines.jpg) no-repeat scroll center center;
 }
 a,
 a:link,
