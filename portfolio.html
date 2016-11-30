@@ -45,93 +45,24 @@
 
 		<!--================= Box Div Start ==================-->
             <!-- Header Area -->
-			<div class="main clearfix">
-				<nav id="menu" class="nav">					
-					<ul>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-home"></i>
-								</span>
-								<span>Home</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"> 
-									<i aria-hidden="true" class="icon-services"></i>
-								</span>
-								<span>Services</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-portfolio"></i>
-								</span>
-								<span>Portfolio</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-blog"></i>
-								</span>
-								<span>Blog</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-team"></i>
-								</span>
-								<span>The team</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-contact"></i>
-								</span>
-								<span>Contact</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div><!-- /container -->
-		<script>
-			//  The function to change the class
-			var changeClass = function (r,className1,className2) {
-				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
-				if( regex.test(r.className) ) {
-					r.className = r.className.replace(regex,' '+className2+' ');
-			    }
-			    else{
-					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
-			    }
-			    return r.className;
-			};	
-
-			//  Creating our button in JS for smaller screens
-			var menuElements = document.getElementById('menu');
-			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
-
-			//  Toggle the class on click to show / hide the menu
-			document.getElementById('menutoggle').onclick = function() {
-				changeClass(this, 'navtoogle active', 'navtoogle');
-			}
-
-			// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
-			document.onclick = function(e) {
-				var mobileButton = document.getElementById('menutoggle'),
-					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
-
-				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
-					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
-				}
-			}
-		</script>
+<body class=' wsite-theme-dark wsite-page-index'>
+<div id="wrapper">
+            <div id="header">
+                <div id="headerleft"><span class='wsite-logo'><a href='/'><img src='/uploads/1/1/1/8/11188130/1423066808.png' style='max-height:76px;' /></a></span></div>
+                <ul class='wsite-menu-default'><li id="active"><a href="/">Pixel Art</a></li><li id='pg563285305903736333'><a href="/animations.html" data-membership-required="0" >Animations</a></li><li id='pg208734846385831746'><a href="/3dtexture.html" data-membership-required="0" >3D/Texture</a></li><li id='pg276308863376185174'><a href="/drawings.html" data-membership-required="0" >Drawings</a></li><li id='pg749296881372906023'><a href="/sketches.html" data-membership-required="0" >Sketches</a></li><li id='pg175591673671352306'><a href="/about-me.html" data-membership-required="0" >About me</a></li><li id='pg791870660754841330'><a href="/contact-me-at-d4rkodhotmailcom.html" data-membership-required="0" >contact me at d4rkod@hotmail.com</a></li></ul>
+                </div>
+            <div id="banner">
+                <div class="wsite-header">
+                </div>
+            </div>
+        <div id="content"><div id='wsite-content' class='wsite-elements wsite-not-footer'>
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -10px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:34.11833677396%; padding:0 10px;">
+					
+						
 
 		<!-- Breadcrumb Section -->
             <section class="breadCrumArea">
