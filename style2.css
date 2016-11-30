@@ -1600,7 +1600,7 @@ div.pp_default .pp_close{
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    color: #fff;
+    color: #404040;
     text-transform: capitalize;
 }
 .breadLink li span{
@@ -1609,7 +1609,7 @@ div.pp_default .pp_close{
     font-size: 16px;
 }
 .breadLink li a{
-    color: #fff;
+    color: #404040;
 }
 .breadLink li:hover a{
     color: #de3c2f;
