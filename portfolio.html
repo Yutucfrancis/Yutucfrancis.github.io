@@ -19,6 +19,9 @@
         <link id="colorChem" rel="stylesheet" type="text/css" href="./light.css">
         <link id="colorsSet" rel="stylesheet" type="text/css" href="./color1.css">
         <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/fonts/glyphicons-halfings-regular.ttf">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
 
 		<script type="text/javascript">
     var host = "joshdeveloper.me";
@@ -42,58 +45,93 @@
 
 		<!--================= Box Div Start ==================-->
             <!-- Header Area -->
-            <header class="headerArea">
-                <div class="logo pull-left">
-                    <div class="logoImg">
-                        <a href="index.html"><img src="logo.png" alt=""></a>
-                    </div>
-                    <h2><a href="index.html">Josh<span></span></a></h2>
-                </div>
-                <nav class="mainMenu pull-left">
-                    <div class="menuButton hidden-lg hidden-md">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul>                                                                                 
-                        <li class="hasChild"><a href="index.html">Home</a>
+			<div class="main clearfix">
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-portfolio"></i>
+								</span>
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-blog"></i>
+								</span>
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-team"></i>
+								</span>
+								<span>The team</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-contact"></i>
+								</span>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div><!-- /container -->
+		<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
 
-                        </li>
-                        <li class="active hasChild"><a href="portfolio.html">Portfolio</a>
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
 
-                        </li>
-                        <li class="hasChild"><a href="blogGrid.html">Blog</a>
-                            <ul class="dropMenu">
-                                <li><a href="blogGrid.html">Blog Grid</a></li>
-                                <li><a href="blogSidebar.html">Blog Sidebar</a></li>
-                                <li><a href="blogSingle.html">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="hasChild"><a href="#">Pages</a>
-                            <ul class="dropMenu">
-                                <li><a href="member.html">member</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li class="hasChild"><a href="event.html">event</a>
-                                    <ul class="dropSub">
-                                        <li><a href="event.html">Event</a></li>
-                                        <li><a href="eventSingle.html">Event Single</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="topSocial pull-right">
-                    <ul>
-                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="google" href="#"><i class="fa fa-google"></i></a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </header>
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+
+			// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+
+				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
 
 		<!-- Breadcrumb Section -->
             <section class="breadCrumArea">
