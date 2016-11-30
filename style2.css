@@ -1184,81 +1184,24 @@ div.pp_default .pp_close{
     color: #404040;
 }
 /************************ Footer Section *******************************/
-.footerArea{
-    position: relative;
-}
-.footerTop{
-    background: url(../images/home1/footerBg.jpg) no-repeat scroll center center / cover;
-    position: relative;
-}
-.footerTop:after{
-    content: "";
-    background: url(logoBig.png) no-repeat scroll center center;
-    width: 80px;
-    height: 60px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: auto;
-    bottom: -40px;
-    z-index: 1;
-}
-.footerContent h2{
-    color: #fff;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.footerContent a{
-    color: #de3c2f;
-    font-size: 100px;
-    font-weight: 300;
-    padding-bottom: 34px;
-    text-transform: uppercase;
-    line-height: 0.8;
-}
-.footerContent a:hover{
-    color: #fff;
-}
-.footerContent p{
-    font-size: 30px;
-    line-height: .9;
-    color: #fff;
-}
-.copyRight{
-    padding: 80px 0;
-    background: #fff;
-}
-.copyRight p{
-    font-size: 16px;
-    line-height: .9;
-}
-.copyRight p a{
-    color: #979797;
-}
-.copyRight p a:hover{
-    color: #de3c2f;
-}
-#backto{
-    width: 40px;
-    height: 40px;
-    background: #404040;
-    display: block;
-    position: fixed;
-    top: 190px;
-    left: 0;
-    text-align: center;
-    padding-top: 10px;
-    z-index: 99;
-}
-#backto:hover{
-    background: #de3c2f;
-}
-#backto img{
-    width: 10px;
-    height: 5px;
-    margin: 0 auto;
-}
+<style>
+    footer {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: #333333;
+    }
+
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 0.7em;
+        text-align: center;
+        bottom:0;
+    }
+</style>
 /***********************************************************************
 *********************************** Home Two ***************************
 ***********************************************************************/
