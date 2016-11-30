@@ -142,7 +142,7 @@ ul.sub-menu > li > a:hover {
 }
 
 ul.sub-menu > li:first-child {
-	border-top: 3px solid #23dbdb;
+	border-top: 3px solid #C00000;
 }
 
 ul.sub-menu ul.sub-menu > li:first-child {
