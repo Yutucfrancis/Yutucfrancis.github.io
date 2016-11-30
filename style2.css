@@ -1189,7 +1189,7 @@ div.pp_default .pp_close{
         position: relative;
         height: 300px;
         width: 100%;
-        background-color: #333333;
+        background-color: #fff;
     }
 
     p.copyright {
