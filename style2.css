@@ -1569,7 +1569,7 @@ div.pp_default .pp_close{
 .breadCrumArea{
     position: relative;
     background: #55575c url(colorful.jpg);
-    padding: 175px 0 60px;
+    padding: 60px 0 60px;
 }
 .breadCrumArea:after {
     background: #55575c url(colorful.jpg);
